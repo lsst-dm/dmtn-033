@@ -1,6 +1,4 @@
-
 :tocdepth: 1
-.. Please do not modify tocdepth; will be fixed when a new Sphinx theme is shipped.
 
 Overall Review
 ==============
@@ -197,23 +195,64 @@ The table below tries to summarizes some of the features needed for a container 
 
 
 
-+-------------+----------------+---------------+------------+-------------+----------+
-|             |   Kubernetes   |   Swarm       |   Mesos    |   Nomad     |   Fleet  |
-+=============+================+===============+============+=============+==========+
-|  Set up     |    Medium      |    Easy       |   Medium   |  Easy       |   Easy   |
-+-------------+----------------+---------------+------------+-------------+----------+
-| Containers  | Docker + rkt   | Docker        || Yes, using|| Standalone | Docker   |
-|             |                |               || Marathon  || +containers|          |
-+-------------+----------------+---------------+------------+-------------+----------+
-| Coordination| etcd           || Internal RAFT| ZooKeeper  || External   | etcd     |
-|             |                || optional     |            || Consul     |          |
-+-------------+----------------+---------------+------------+-------------+----------+
-| Strategy    || Control       || Control      || 2 level   || Control    | serviced |
-|             || loop driven   || loop driven  || scheduling|| loop driven|          |
-+-------------+----------------+---------------+------------+-------------+----------+
-
-
-
++--------------+-------------+---------------+-------------+-------------+-----------+
+|              | Kubernetes  | Swarm         | Mesos       | Nomad       | Fleet     |
++==============+=============+===============+=============+=============+===========+
+|  Set up      | Medium      | Easy          | Medium      | Easy        | Easy      |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Containers   | Docker + rkt| Docker        || Yes, using || Standalone | Docker    |
+|              |             |               || Marathon   || +containers|           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Coordination | etcd        || Internal RAFT| ZooKeeper   || External   | etcd      |
+|              |             || optional     |             || Consul     |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Strategy     || Control    || Control      || 2 level    || Control    | serviced  |
+|              || loop driven|| loop driven  || scheduling || loop driven|           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| API          || Declarative| Same as Docker|| Declarative| Simple      | Simple    |
+|              || powerful   |               || powerful   |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+|| High        | Yes         | Almost        | Yes         | Not sure    | No        |
+|| Availability|             |               |             |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Resilience   | Yes         | Possible      | Yes         | Not sure    | No        |
++--------------+-------------+---------------+-------------+-------------+-----------+
+|| Multi       | Yes         | No            | Yes         | Not sure    | No        |
+|| Scheduler   |             |               |             |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Schedule unit| Pod         | Container     | Task/Docker | Task        | Container |
++--------------+-------------+---------------+-------------+-------------+-----------+
+|| Service     | Yes         | No            | Yes         | Yes         | Workaround|
+|| Discovery   |             |               |             |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+||  External   | Yes, several| Routing mesh  | HAproxy     | Manual      | Workaround|
+||  Access     |             |               |             |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| GUI Monitor  | Included    | External      | Included    | External    | External  |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Replication  | Yes         | Yes           | Yes         | Yes         | Yes       |
++--------------+-------------+---------------+-------------+-------------+-----------+
+|| Rolling     | Yes         | No            | Yes         | No          | No        |
+|| Upgrades    |             |               |             |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Secrets      | Yes         | Not yet       || No, only   || External   | No        |
+|              |             |               || Workaround || Vault      |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+|| Persistent  | Yes         | Is possible   | Yes         | Workaround  | Possible  |
+|| Volumes     |             |               |             |             |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| QoS tiers    | Yes         | Not yet       | Yes         | Not yet     | No        |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Scalability  | 3,000 nodes |               | 10,000 nodes| 5,000 nodes |           |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Multi tenant | Yes         | No            | Yes         | No          | No        |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Auto-Scaling | Yes         | No            | Is possible | No          | No        |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Membership   | etcd        | gossip        | Yes         | gossip      | No        |
++--------------+-------------+---------------+-------------+-------------+-----------+
+| Auth         | RBAC        | Machine users | credentials | Yes         | Possible  |
++--------------+-------------+---------------+-------------+-------------+-----------+
 
 .. note::
 
