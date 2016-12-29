@@ -6,14 +6,14 @@
 series: 'DMTN'
 
 # Document number, as a string. It should be three digits, padded with leading zeros
-serial_number: '34'
+serial_number: '33'
 
 # Serial number of the document. E.g. SQR-001
 # NOTE: this field is *planned* for deprecation
-doc_id: 'DMTN-34'
+doc_id: 'DMTN-33'
 
 # Title of the document, without the series/serial designation
-doc_title: 'Container Management'
+doc_title: ' Cluster and container management with Kubernetes '
 
 # Author names, ordered as a list. Each author name should be formatted as 'First Last'
 authors:
@@ -37,7 +37,7 @@ authors:
 copyright: '2016, AURA/LSST'
 
 # Description. A short, 1-2 sentence statemement used by document indices.
-description: 'A short description of this document'
+description: 'Notes regarding Kubernetes and comparison with other container managers'
 
 # Abstract, if available
 # abstract: >
@@ -47,11 +47,11 @@ description: 'A short description of this document'
 #           You can have multiple paragraphs too.
 
 # URL where this document is published by Read the Docs. e.g. http://sqr-001.lsst.codes
-url: 'https://dmtn-34.lsst.io'
+url: 'https://dmtn-33.lsst.io'
 
 # LSST Docushare URL, if authoritative versions of this are are stored there.
 # Leave as an empty string or comment out this key if there is no Docushare URL.
 docushare_url: ''
 
 # GitHub repo URL
-github_url: 'https://github.com/lsst-dm/dmtn-34'
+github_url: 'https://github.com/lsst-dm/dmtn-33'
