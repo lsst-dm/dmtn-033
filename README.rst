@@ -1,19 +1,19 @@
-.. image:: https://img.shields.io/badge/dmtn--34-lsst.io-brightgreen.svg
-   :target: https://dmtn-34.lsst.io
-.. image:: https://travis-ci.org/lsst-dm/dmtn-34.svg
-   :target: https://travis-ci.org/lsst-dm/dmtn-34
+.. image:: https://img.shields.io/badge/dmtn--33-lsst.io-brightgreen.svg
+   :target: https://dmtn-33.lsst.io
+.. image:: https://travis-ci.org/lsst-dm/dmtn-33.svg
+   :target: https://travis-ci.org/lsst-dm/dmtn-33
 ..
   Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
   .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
      :target: http://dx.doi.org/10.5281/zenodo.#####
 
 ############################
-DMTN-34 Container Management
+DMTN-33 Container Management
 ############################
 
 A short description of this document
 
-View this technote at https://dmtn-34.lsst.io or see a preview of the current version in `this repo`_.
+View this technote at https://dmtn-33.lsst.io or see a preview of the current version in `this repo`_.
 
 
 
@@ -24,8 +24,8 @@ You can clone this repository and build the technote locally with `Sphinx`_
 
 .. code-block:: bash
 
-   git clone https://github.com/lsst-dm/dmtn-34
-   cd dmtn-34
+   git clone https://github.com/lsst-dm/dmtn-33
+   cd dmtn-33
    pip install -r requirements.txt
    make html
 
@@ -45,7 +45,7 @@ The `DM reStructuredText Style Guide`_ is a good resource for how we write reStr
 Remember that images and other types of assets should be stored in the ``_static/`` directory of this repository.
 See ``_static/README.rst`` for more information.
 
-The published technote at https://dmtn-34.lsst.io will be automatically rebuilt whenever you push your changes to the ``master`` branch on `GitHub <https://github.com/lsst-dm/dmtn-34>`_.
+The published technote at https://dmtn-33.lsst.io will be automatically rebuilt whenever you push your changes to the ``master`` branch on `GitHub <https://github.com/lsst-dm/dmtn-33>`_.
 
 Updating metadata
 =================
