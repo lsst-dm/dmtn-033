@@ -6,7 +6,7 @@
 series: 'DMTN'
 
 # Document number, as a string. It should be three digits, padded with leading zeros
-serial_number: '33'
+serial_number: '033'
 
 # Serial number of the document. E.g. SQR-001
 # NOTE: this field is *planned* for deprecation
