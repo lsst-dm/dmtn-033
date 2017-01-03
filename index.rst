@@ -256,12 +256,6 @@ The table below tries to summarizes some of the features needed for a container 
 | Auth         | RBAC        | Machine users | credentials | Yes         | Possible  |
 +--------------+-------------+---------------+-------------+-------------+-----------+
 
-.. note::
-
-   **This technote is not yet published.**
-
-   A short description of this document
-
 .. rubric:: Footnotes
 
 .. [#f1] Currently under active development
